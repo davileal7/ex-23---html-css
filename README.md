@@ -1,2 +1,2 @@
-# ex 23 - html css
+ HTML - CSS
  atividades propostas pelo curso em video.
