@@ -14,34 +14,37 @@
     table {
         border-collapse: collapse;
         
-
     }
     
      thead {
         background-color: gray;
-       
-        
+
     }
+
 
     th {
         background-color: gray;
+    
     }
 
     th,td {
         border: 1px solid black;
         padding: 10px;
+
     }
 </style>
 <body>
     <h1>Notas</h1>
+                                                        <!--colspan - expansão de coluna-->
+                                                        <!--rowspan - expansão de linha-->
     <table>
         <thead>
-            <tr>
-                <th rowspan="2" scope="col">Área</th>
+            <tr> <!-- abre LINHA-->
+                <th rowspan="2" scope="col">Área</th>        <!-- CABEÇALHO-->
                 <th rowspan="2" scope="col">Disciplinas</th> 
                 <th colspan="2" scope="col">Notas</th>
                 <th rowspan="2" scope="col">Média</th>    
-                    <tr>
+                    <tr><!-- abre LINHA-->
                         <th>nota 1</th>
                         <th>nota 2</th>
                     </tr>            
@@ -49,56 +52,56 @@
         </thead>
 
         <tbody>
-            <tr>
+            <tr><!-- abre LINHA-->
                 <th rowspan="4" scope="colgroup">Exatas</th>
-                <td>Matemática</td>
+
+                <td>Matemática</td>  <!--DADOS-->
                 <td>6.5</td>
                 <td>9.0</td>
                 <td>7.75</td> 
             </tr>
-            <tr>
-                <td>Física</td>
+            <tr><!-- abre LINHA-->
+                <td>Física</td>      <!--DADOS-->
                 <td>5.0</td>
                 <td>5.0</td>
                 <td>5.0</td> 
             </tr>
-            <tr>
-                <td>Química</td>
+            <tr><!-- abre LINHA-->
+                <td>Química</td>     <!--DADOS-->
                 <td>7.0</td>
                 <td>8.0</td> 
                 <td>7.5</td>
             </tr>
-            <tr>
-                <td>Biologia</td>
+            <tr><!-- abre LINHA-->
+                <td>Biologia</td>    <!--DADOS-->
                 <td>5.0</td>
-                <td>4.0</td>
+                <td style="color: red;">4.0</td>
                 <td style="color: red;">4.5</td> 
             </tr>
-            <tr>
+            <tr><!-- abre LINHA-->
                 <th colspan="4">Média Exatas</th>
-                <td style="background-color:blue ;color: white;">12.3</td>
+                <td style="background-color:rgb(66, 66, 160) ;color: white;">12.3</td>
             </tr>
-            <tr>
+            <tr><!-- abre LINHA-->
                 <th rowspan="2" scope="colgroup">Humanas</th>
-                <td>Português</td>
+                           
+                <td>Português</td><!--DADOS-->
                 <td>8.0</td>
                 <td>10</td>
                 <td>8.0</td>
             </tr>
-            <tr>
-                <td>História</td>
+            <tr><!-- abre LINHA-->
+                <td>História</td> <!--DADOS-->
                 <td>5.0</td>
                 <td>7.0</td>
                 <td>6.0</td>
             </tr>
             
-            <tr>
+            <tr><!-- abre LINHA-->
                 <th colspan="4">Média Humanas</th>
-                <td style="background-color:blue ; color: white;">7</td>
+                <td style="background-color:rgb(66, 66, 160)  ; color: white;">7</td>
             </tr>
-        </tbody>
-
-        
+        </tbody>  
     </table>
     
 </body>
