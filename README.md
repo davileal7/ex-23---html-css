@@ -1,2 +1,2 @@
 # ex 23 - html css
- exercicio prposto do curso
+ atividades propostas pelo curso em video.
