@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .grupo {
+            background-color: rgb(108, 92, 201);
+        }
+
+        .amarelo {
+            background-color: rgb(243, 243, 146);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="grupo">
+            <col class="amarelo" span="3">
+            
+           
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalistas</td>
+        </tr>
+        <tr>
+            <td>Davi Leal</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Web Delevoper</td>
+        </tr>
+        <tr>
+            <td>Caio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Jorge</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Rafaela</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Médica</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
