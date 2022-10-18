@@ -1,1 +1,1 @@
-print(f'{nome}')
+apenas para receber
