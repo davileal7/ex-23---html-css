@@ -9,17 +9,23 @@
 <!--apagar o auto texto-->  
 <!--método GET (dados não sensisiveis, envio até 3 mil letras) visualiza na URL-->
 <!--método POST (dados sensiveis, + de 3 mil letras, arquivos)-->
-<!--label (relaciona com Nome)-->
+<!--LABEL (relaciona com Nome)-->
 
 
 <body>
     <h1>Formulário</h1>
     <form action="cadastro.py" method="get" autocomplete="off"> 
-        <p><label for="inome">Nome: </label>       
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome: </label>
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+        <p>
+            <label for="inome">Nome: </label>       
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
     
 </body>
