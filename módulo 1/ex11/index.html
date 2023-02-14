@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Midias em HTML5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Primeira opção de Aúdio</h1>
+    <p>Vamos reproduzir aúdios.</p>
+    <audio src="musica/Black Mass - Brian Bolger.mp3" controls autoplay></audio>
+    
+    <h1>Segunda opção de Aúdio</h1>
+    <p>Toque a música:</p> 
+        <audio preload="metadata" autoplay controls loop>
+            <source src="musica/Retribution - NEFFEX.mp3" type="audio/mpeg ">
+        </audio>
+</body>
+</html>
