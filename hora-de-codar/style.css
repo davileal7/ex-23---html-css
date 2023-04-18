@@ -1,0 +1,108 @@
+.container {
+    background-color: black;
+    border: red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 50px auto 10%;
+    height: 40vh;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
+}
+
+.container div {
+    background-color: rgba(105, 159, 92, 0.897);
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+.container2 {
+    background-color: rgb(106, 175, 214);
+    border: 3px solid rgb(209, 4, 38);
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    'cabecalho cabecalho cabecalho cabecalho'
+    'sidebar content content content'
+    'footer footer footer footer'
+}
+
+.container2 div {
+    background-color: rgb(162, 157, 62);
+    padding: 20px;
+    border: 1px solid rgb(255, 28, 54);
+}
+
+#cabecalho {
+    grid-area: cabecalho;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 50vh;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.container3 {
+    background-color: rgb(108, 131, 125);
+    border: 3px solid rgb(209, 4, 38);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    /*horizontal*/
+    justify-content: center;
+    /*vertical*/
+    align-items: end;
+}
+
+.container3 div {
+    background-color: rgb(186, 134, 209);
+    padding: 20px;
+    border: 1px solid rgb(20, 4, 6);
+}
+
+.container4 {
+    background-color: rgb(13, 87, 144);
+    border: 3px solid rgb(209, 4, 38);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container4 div {
+    background-color: rgb(141, 19, 19);
+    padding: 20px;
+    border: 1px solid rgb(20, 4, 6);
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item-3 {
+    justify-self: end;
+    height: 200px;
+}
+#item-5 {
+    justify-self: start;
+    height: 200px;
+}
+#item-4 {
+    align-self: center;
+}
+
+#item-6 {
+    align-self: end;
+}
