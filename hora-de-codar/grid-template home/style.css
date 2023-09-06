@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    border: red;
+    
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    'navbar navbar  navbar'
+    'fundo-casa fundo-casa fundo-casa'
+    'footer footer footer'
+}
+
+.container div {
+    background-color: rgba(105, 159, 92, 0.897);
+   
+    border: 1px solid blue;
+}
+
+#navbar {
+    grid-area: navbar ;
+    
+}
+
+#navbar .links {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+a {
+   text-decoration: none;
+}
+
+#fundo-casa {
+    grid-area: fundo-casa;
+    height: 80vh;
+    background-image: url('img/casa_fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quem_somos {
+    grid-area: texto;
+    height: 30vh;
+    width: 50vw;
+    
+}
+
+#footer {
+    grid-area: footer;
+    height: 50vh;
+}
